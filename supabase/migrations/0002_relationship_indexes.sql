@@ -1,0 +1,9 @@
+create index if not exists transactions_report_id_idx on transactions(report_id);
+create index if not exists claim_packages_report_id_idx on claim_packages(report_id);
+create index if not exists claim_packages_grant_rule_id_idx on claim_packages(grant_rule_id);
+create index if not exists claim_recommendations_package_id_idx on claim_recommendations(package_id);
+create index if not exists claim_recommendations_invoice_id_idx on claim_recommendations(invoice_id);
+create index if not exists exceptions_package_id_idx on exceptions(package_id);
+create index if not exists exceptions_invoice_id_idx on exceptions(invoice_id);
+create index if not exists approval_decisions_package_id_idx on approval_decisions(package_id);
+create index if not exists audit_logs_object_id_idx on audit_logs(object_id);
